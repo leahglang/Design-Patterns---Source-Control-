@@ -1,0 +1,4 @@
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.GeneratedMSBuildEditorConfig.editorconfig
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.AssemblyInfoInputs.cache
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.AssemblyInfo.cs
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.csproj.CoreCompileInputs.cache
