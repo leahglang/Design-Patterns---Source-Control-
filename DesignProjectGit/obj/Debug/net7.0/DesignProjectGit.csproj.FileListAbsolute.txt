@@ -2,3 +2,13 @@ H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProj
 H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.AssemblyInfoInputs.cache
 H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.AssemblyInfo.cs
 H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.csproj.CoreCompileInputs.cache
+H:\design patterns\DesignProjectGit\DesignProjectGit\bin\Debug\net7.0\DesignProjectGit.exe
+H:\design patterns\DesignProjectGit\DesignProjectGit\bin\Debug\net7.0\DesignProjectGit.deps.json
+H:\design patterns\DesignProjectGit\DesignProjectGit\bin\Debug\net7.0\DesignProjectGit.runtimeconfig.json
+H:\design patterns\DesignProjectGit\DesignProjectGit\bin\Debug\net7.0\DesignProjectGit.dll
+H:\design patterns\DesignProjectGit\DesignProjectGit\bin\Debug\net7.0\DesignProjectGit.pdb
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.dll
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\refint\DesignProjectGit.dll
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.pdb
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\DesignProjectGit.genruntimeconfig.cache
+H:\design patterns\DesignProjectGit\DesignProjectGit\obj\Debug\net7.0\ref\DesignProjectGit.dll

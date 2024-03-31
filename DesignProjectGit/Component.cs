@@ -10,18 +10,17 @@ namespace DesignProjectGit
     public abstract class Component
     {
         public abstract string Name { get; set; }
-        //public abstract string Owner { get; set; }
         public abstract IState Status { get; set; }
 
-        public Component(string name /*string owner,*/)
+        public Component(string name )
         {
             Name = name;
-            //Owner = owner;
             Status = Draft.GetInstance();
         }
         public abstract void Merge(Component comp);
         public abstract void Undo();
         public abstract void Print();
+
         public void Add()
         {
             if (Status.GetStatus() == "Draft")

@@ -26,7 +26,7 @@ namespace DesignProjectGit.State
 
         public string GetStatus()
         {
-            return "Ready To Merge";
+            return "ReadyToMerge";
         }
     }
 }
