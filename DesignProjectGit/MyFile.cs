@@ -37,6 +37,10 @@ namespace DesignProjectGit
 
         public override void Undo()
         {
+            if (history.Count() <= 0)
+            {
+                return;
+            }
             var last = history.Pop();
             if (last == null) return;
             this.Status = last.Status;

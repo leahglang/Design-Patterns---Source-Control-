@@ -62,7 +62,7 @@ namespace DesignProjectGit
                 {
                     this.Children[child.Key].Merge(child.Value);
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                     this.Children.Add(child.Key, child.Value);
                 }
@@ -100,6 +100,10 @@ namespace DesignProjectGit
 
         public override void Undo()
         {
+            if(history.Count() <= 0)
+            {
+                return;
+            }
             Branch last = history.Pop();
             if( last != null ) return;
             this.Status = last.Status;
@@ -108,6 +112,7 @@ namespace DesignProjectGit
             {
                 child.Value.Undo();
             }
+            
         }
     }
 }
