@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignProjectGit.Status;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,12 +22,13 @@ namespace DesignProjectGit.State
 
         public void ChangeStatus(Component component)
         {
-            component.Status = Commited.GetInstance();
+            component.Status = Pull.GetInstance();
+            Console.WriteLine("Commited");
         }
 
         public string GetStatus()
         {
-            return "Committed";
+            return "Commited";
         }
     }
 }

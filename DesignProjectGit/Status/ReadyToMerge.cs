@@ -21,7 +21,8 @@ namespace DesignProjectGit.State
 
         public void ChangeStatus(Component component)
         {
-            component.Status = ReadyToMerge.GetInstance();
+            component.Status = Merged.GetInstance();
+            Console.WriteLine("ReadyToMerge");
         }
 
         public string GetStatus()

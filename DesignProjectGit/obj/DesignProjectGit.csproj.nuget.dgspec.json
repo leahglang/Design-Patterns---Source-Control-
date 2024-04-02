@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\design patterns\\DesignProjectGit\\DesignProjectGit\\DesignProjectGit.csproj": {}
+    "H:\\design patterns\\Design-Patterns---Source-Control\\Design-Patterns---Source-Control-\\DesignProjectGit\\DesignProjectGit.csproj": {}
   },
   "projects": {
-    "H:\\design patterns\\DesignProjectGit\\DesignProjectGit\\DesignProjectGit.csproj": {
+    "H:\\design patterns\\Design-Patterns---Source-Control\\Design-Patterns---Source-Control-\\DesignProjectGit\\DesignProjectGit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\design patterns\\DesignProjectGit\\DesignProjectGit\\DesignProjectGit.csproj",
+        "projectUniqueName": "H:\\design patterns\\Design-Patterns---Source-Control\\Design-Patterns---Source-Control-\\DesignProjectGit\\DesignProjectGit.csproj",
         "projectName": "DesignProjectGit",
-        "projectPath": "H:\\design patterns\\DesignProjectGit\\DesignProjectGit\\DesignProjectGit.csproj",
+        "projectPath": "H:\\design patterns\\Design-Patterns---Source-Control\\Design-Patterns---Source-Control-\\DesignProjectGit\\DesignProjectGit.csproj",
         "packagesPath": "C:\\Users\\לנג לאה\\.nuget\\packages\\",
-        "outputPath": "H:\\design patterns\\DesignProjectGit\\DesignProjectGit\\obj\\",
+        "outputPath": "H:\\design patterns\\Design-Patterns---Source-Control\\Design-Patterns---Source-Control-\\DesignProjectGit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -64,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
 ﻿using DesignProjectGit.State;
+using DesignProjectGit.Status;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +38,7 @@ namespace DesignProjectGit
         }
 
         public void Add(Component component)
-        {
+        { 
             Children.Add(component.Name, component);
             Status = Draft.GetInstance();
         }
@@ -48,26 +49,39 @@ namespace DesignProjectGit
             Status = Draft.GetInstance();
         }
 
-        public override void Merge(Component comp)
+        public override Component Merged(Component comp)
         {
-            if(this.Status.GetStatus() != "ReadyToMerge")
+
+            Component branch = base.Merged(comp);
+            if (branch == comp)
             {
-                Console.WriteLine("error, you can't marge");
-                return;
-            }
-            history.Push(new Branch(this.Name) { Status = this.Status, Children = this.Children});
-            foreach (var child in ((Branch)comp).Children)
-            {
-                try
+                foreach (var component in ((Branch)comp).Children)
                 {
-                    this.Children[child.Key].Merge(child.Value);
-                }
-                catch(Exception)
-                {
-                    this.Children.Add(child.Key, child.Value);
+                    if (Children.ContainsKey(component.Key))
+                    {
+                        this.Children[component.Key].Merged(component.Value);
+                    }
+                    else
+                    {
+                        Children.Add(component.Key, component.Value);
+                    }
                 }
             }
-            Status.ChangeStatus(this);
+            return this;
+
+            //history.Push(new Branch(this.Name) { Status = this.Status, Children = this.Children});
+            //foreach (var child in ((Branch)comp).Children)
+            //{
+            //    try
+            //    {
+            //        this.Children[child.Key].Merge(child.Value);
+            //    }
+            //    catch(Exception)
+            //    {
+            //        this.Children.Add(child.Key, child.Value);
+            //    }
+            //}
+            //Status.ChangeStatus(this);
         }
 
         public override void Print()

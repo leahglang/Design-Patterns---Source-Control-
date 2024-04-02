@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignProjectGit.Status;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,11 +22,12 @@ public class Draft:IState
 
     public void ChangeStatus(Component component)
     {
-        component.Status = Draft.GetInstance();
+        component.Status = Added.GetInstance();
+        Console.WriteLine("Draft");
     }
 
     public string GetStatus()
-    {
+    {       
         return "Draft";
     }
 }

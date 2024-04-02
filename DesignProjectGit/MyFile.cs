@@ -23,16 +23,24 @@ namespace DesignProjectGit
             this.Content = content;
         }
 
-        public override void Merge(Component comp)
+        public override Component Merged(Component comp)
         {
-            if (this.Status.GetStatus() != "ReadyToMerge")
+            Component myFile = base.Merged(comp);
+            if (myFile == comp)
             {
-                Console.WriteLine("error, you can't marge");
-                return;
+                if (((MyFile)myFile).Content.Equals(((MyFile)comp).Content))
+                {
+                    Console.WriteLine("The files are same");
+                }
+                else
+                {
+                    Console.WriteLine("The marge be succsesfully");
+                }
             }
-            history.Push(new MyFile(this.Name) { Status = this.Status });
-            this.Content = ((MyFile)comp).Content;
-            Status.ChangeStatus(this);
+            return myFile;
+            //history.Push(new MyFile(this.Name) { Status = this.Status });
+            //this.Content = ((MyFile)comp).Content;
+            //Status.ChangeStatus(this);
         }
 
         public override void Undo()

@@ -21,11 +21,12 @@ public class UnderReview : IState
 
     public void ChangeStatus(Component component)
     {
-        component.Status = UnderReview.GetInstance();
+        component.Status = ReadyToMerge.GetInstance();
+        Console.WriteLine("UnderReview");
     }
 
     public string GetStatus()
-    {
-        return "UnderReview";
+    {  
+        return "UnderReview";    
     }
 }
